@@ -1,2 +1,4 @@
-<h1>Mixes#index</h1>
-<p>hello, world</p>
+<%= link_to "add mix", new_mix_path(@mix) %>
+<ul><% @mixes.each do |mix| %>
+  <li><%= link_to mix.name, "https://#{mix.url}" %><li>
+<% end %></ul>
