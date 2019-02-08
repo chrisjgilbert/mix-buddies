@@ -1,10 +1,16 @@
-<%= link_to "add mix", new_mix_path(@mix) %>
-<ul><% @mixes.each do |mix| %>
-  <li>
-    <%= link_to mix.name, "https://#{mix.url}" %>
-    <div class="btn btn-warning">
-      <%= link_to 'delete', mix_path(mix), method: :delete, :class => "btn"%>
-    </div>
-  <li>
-
-<% end %></ul>
+<div class="container">
+  <div class="row">
+  <%= link_to "add mix", new_mix_path(@mix) %>
+  <ul>
+    <% @mixes.each do |mix| %>
+      <li>
+        <%= link_to mix.name, "https://#{mix.url}" %>
+        <% mix.tag_list.each do |tag| %>
+          <button type="button" class="btn btn-info"><%=tag%></button>
+        <% end %>
+        <%= link_to 'delete', mix_path(mix), method: :delete, :class => "btn btn-warning" %>
+      <li>
+    <% end %>
+  </ul>
+  </div>
+</div>

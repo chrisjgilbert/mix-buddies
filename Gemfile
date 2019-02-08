@@ -23,6 +23,7 @@ gem "bootstrap_form", ">= 4.1.0"
 gem 'bootstrap', "~>4.0.0"
 gem 'jquery-rails'
 gem 'bootsnap', '>= 1.1.0', require: false
+gem 'acts-as-taggable-on', '~> 6.0'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.8'

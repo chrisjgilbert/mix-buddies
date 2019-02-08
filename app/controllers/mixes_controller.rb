@@ -9,6 +9,7 @@ class MixesController < ApplicationController
 
   def create
     @mix = Mix.create(mix_params)
+    @mix.save
     redirect_to "/"
   end
 
@@ -21,6 +22,6 @@ class MixesController < ApplicationController
   private
 
   def mix_params
-    params.require(:mix).permit(:name, :url)
+    params.require(:mix).permit(:name, :url, :tag_list)
   end
 end
