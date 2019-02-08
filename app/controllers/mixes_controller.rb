@@ -9,7 +9,6 @@ class MixesController < ApplicationController
 
   def create
     @mix = Mix.create(mix_params)
-    @mix.save
     redirect_to "/"
   end
 
