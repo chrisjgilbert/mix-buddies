@@ -12,6 +12,12 @@ class MixesController < ApplicationController
     redirect_to "/"
   end
 
+  def destroy
+    mix = Mix.find(params[:id])
+    mix.destroy
+    redirect_to "/"
+  end
+
   private
 
   def mix_params

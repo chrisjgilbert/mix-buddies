@@ -6,7 +6,7 @@ RSpec.feature "user visits homepage", type: :feature do
     visit_homepage_and_add_mix
     expect(page).to have_content "my mix"
     expect(page).to have_selector(:css, 'a[href="https://www.blah.com"]')
-    click_button 'delete'
+    click_link 'delete'
     expect(page).not_to have_content "my mix"
     expect(page).not_to have_selector(:css, 'a[href="https://www.blah.com"]')
   end

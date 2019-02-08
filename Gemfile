@@ -20,10 +20,13 @@ gem 'turbolinks', '~> 5'
 
 gem 'jbuilder', '~> 2.5'
 gem "bootstrap_form", ">= 4.1.0"
+gem 'bootstrap', "~>4.0.0"
+gem 'jquery-rails'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.8'
+  gem 'simplecov'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 

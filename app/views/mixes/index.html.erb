@@ -1,4 +1,10 @@
 <%= link_to "add mix", new_mix_path(@mix) %>
 <ul><% @mixes.each do |mix| %>
-  <li><%= link_to mix.name, "https://#{mix.url}" %><li>
+  <li>
+    <%= link_to mix.name, "https://#{mix.url}" %>
+    <div class="btn btn-warning">
+      <%= link_to 'delete', mix_path(mix), method: :delete, :class => "btn"%>
+    </div>
+  <li>
+
 <% end %></ul>
