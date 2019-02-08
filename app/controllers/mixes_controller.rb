@@ -9,12 +9,24 @@ class MixesController < ApplicationController
 
   def create
     @mix = Mix.create(mix_params)
+
     redirect_to "/"
   end
 
   def destroy
-    mix = Mix.find(params[:id])
-    mix.destroy
+    Mix.destroy(params[:id])
+
+    redirect_to "/"
+  end
+
+  def edit
+    @mix = Mix.find(params[:id])
+  end
+
+  def update
+    @mix = Mix.find(params[:id])
+    @mix.update(mix_params)
+
     redirect_to "/"
   end
 

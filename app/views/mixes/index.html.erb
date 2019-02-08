@@ -9,6 +9,7 @@
           <button type="button" class="btn btn-info"><%=tag%></button>
         <% end %>
         <%= link_to 'delete', mix_path(mix), method: :delete, :class => "btn btn-warning" %>
+        <%= link_to 'update', edit_mix_path(mix), :class => "btn btn-primary" %>
       <li>
     <% end %>
   </ul>

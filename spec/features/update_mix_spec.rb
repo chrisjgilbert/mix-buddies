@@ -1,0 +1,21 @@
+require 'rails_helper'
+include FeatureHelpers
+
+RSpec.feature "user visits homepage", type: :feature do
+  scenario "user updates mix" do
+    visit_homepage_and_add_mix_with_tags
+    click_link 'update'
+    fill_in 'mix_name', with: 'updated mix'
+    fill_in 'mix_url', with: 'www.updatedmix.com'
+    fill_in 'mix_tag_list', with: 'hip-hop, disco'
+    click_button 'submit'
+    expect(page).not_to have_content "my mix"
+    expect(page).not_to have_selector(:css, 'a[href="https://www.blah.com"]')
+    expect(page).not_to have_button "techno"
+    expect(page).not_to have_button "house"
+    expect(page).to have_content "updated mix"
+    expect(page).to have_selector(:css, 'a[href="https://www.updatedmix.com"]')
+    expect(page).to have_button "hip-hop"
+    expect(page).to have_button "disco"
+  end
+end
