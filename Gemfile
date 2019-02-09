@@ -20,7 +20,7 @@ gem 'turbolinks', '~> 5'
 
 gem 'jbuilder', '~> 2.5'
 gem "bootstrap_form", ">= 4.1.0"
-gem 'bootstrap', "~>4.0.0"
+gem "bootstrap", ">= 4.1.2"
 gem 'jquery-rails'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'acts-as-taggable-on', '~> 6.0'
