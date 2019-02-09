@@ -9,7 +9,8 @@ I approached this app in more of a BDD way - that is writing only integration te
 * `$ brew install postgresql` if you need postgres installing
 * `$ git clone https://github.com/chrisjgilbert/music-mix-manager`
 * `$ bundle` to install dependencies
-* `$ rake db:create` to create the database
+* `$ rake db:create` to create the database then
+* `$ rake db:migrate`   
 * `$ rails s` to run the server
 * `http://localhost:3000/` to get started!
 

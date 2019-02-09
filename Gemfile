@@ -38,6 +38,8 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'web-console', '>= 3.3.0'
+  gem "rubocop", ">0.53"
+  gem "rubocop-rails_config"
 end
 
 group :test do
