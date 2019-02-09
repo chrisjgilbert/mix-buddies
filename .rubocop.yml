@@ -45,11 +45,25 @@ Metrics/LineLength:
   Exclude:
     - 'spec/**/*'
     - 'test/**/*'
+    - 'Rakefile'
+    - 'Gemfile'
 
 Metrics/BlockLength:
   Exclude:
     - 'spec/**/*'
     - 'test/**/*'
+    - 'Rakefile'
+    - 'Gemfile'
+
+Style/MixinUsage:
+  Exclude:
+    - 'spec/**/*'
+    - 'bin/*'
+
+AllCops:
+  Excludes:
+    - 'config/**/*'
+    - 'db/**/*'
 
 # Code Style
 # ==========
