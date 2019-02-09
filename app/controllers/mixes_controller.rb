@@ -3,7 +3,11 @@ class MixesController < ApplicationController
   before_action :find_mix, only: [:edit, :update, :destroy]
 
   def index
-    @mixes = Mix.all
+    if params[:tag]
+      @mixes = Mix.tagged_with(params[:tag])
+    else
+      @mixes = Mix.all
+    end
   end
 
   def new

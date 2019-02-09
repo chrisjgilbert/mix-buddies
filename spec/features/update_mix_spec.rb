@@ -11,11 +11,11 @@ RSpec.feature "user visits homepage", type: :feature do
     click_button 'submit'
     expect(page).not_to have_content "my mix"
     expect(page).not_to have_selector(:css, 'a[href="https://www.blah.com"]')
-    expect(page).not_to have_button "techno"
-    expect(page).not_to have_button "house"
+    expect(page).not_to have_link "techno"
+    expect(page).not_to have_link "house"
     expect(page).to have_content "updated mix"
     expect(page).to have_selector(:css, 'a[href="https://www.updatedmix.com"]')
-    expect(page).to have_button "hip-hop"
-    expect(page).to have_button "disco"
+    expect(page).to have_link "hip-hop"
+    expect(page).to have_link "disco"
   end
 end
