@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 module FeatureHelpers
   def visit_homepage_and_add_mix_with_techno_house_tags
-    visit "/"
+    visit '/'
     click_link 'add mix'
     fill_in 'mix_name', with: 'my mix'
     fill_in 'mix_url', with: 'www.blah.com'
@@ -9,7 +11,7 @@ module FeatureHelpers
   end
 
   def visit_homepage_and_add_mix_with_disco_tag
-    visit "/"
+    visit '/'
     click_link 'add mix'
     fill_in 'mix_name', with: 'disco mix'
     fill_in 'mix_url', with: 'www.disco.com'

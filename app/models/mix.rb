@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Mix < ApplicationRecord
   validates_presence_of :name, :url
   acts_as_taggable
@@ -6,7 +8,6 @@ class Mix < ApplicationRecord
   private
 
   def format_website
-    self.url = "http://#{self.url}" unless self.url[/^https?/]
+    self.url = "http://#{url}" unless url[/^https?/]
   end
-
 end

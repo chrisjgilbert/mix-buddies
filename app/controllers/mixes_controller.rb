@@ -1,13 +1,14 @@
-class MixesController < ApplicationController
+# frozen_string_literal: true
 
-  before_action :find_mix, only: [:edit, :update, :destroy]
+class MixesController < ApplicationController
+  before_action :find_mix, only: %i[edit update destroy]
 
   def index
-    if params[:tag]
-      @mixes = Mix.tagged_with(params[:tag])
-    else
-      @mixes = Mix.all
-    end
+    @mixes = if params[:tag]
+               Mix.tagged_with(params[:tag])
+             else
+               Mix.all
+             end
   end
 
   def new
@@ -17,28 +18,27 @@ class MixesController < ApplicationController
   def create
     @mix = Mix.create(mix_params)
 
-    redirect_to "/"
+    redirect_to '/'
   end
 
   def destroy
     @mix.destroy
 
     respond_to do |format|
-     format.html { redirect_to mixes_url }
-     format.json { head :no_content }
-     format.js   { render :layout => false }
+      format.html { redirect_to mixes_url }
+      format.json { head :no_content }
+      format.js   { render layout: false }
     end
 
-    redirect_to "/"
+    redirect_to '/'
   end
 
-  def edit
-  end
+  def edit; end
 
   def update
     @mix.update_attributes(mix_params)
 
-    redirect_to "/"
+    redirect_to '/'
   end
 
   private

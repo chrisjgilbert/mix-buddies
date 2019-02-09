@@ -11,6 +11,7 @@ I approached this app in more of a BDD way - that is writing only integration te
 * `$ bundle` to install dependencies
 * `$ rake db:create` to create the database
 * `$ rails s` to run the server
+* `http://localhost:3000/` to get started!
 
 ## To run the tests    
 * `$ rake`
@@ -21,10 +22,7 @@ I approached this app in more of a BDD way - that is writing only integration te
 ## Screenshots
 
 ### Add new mix
-![add mix](public/add_mix.png)
-
-### View all saved mixes
-![all mixes](public/all_mixes.png)
+![add mix](public/add_mix_gif.gif)
 
 ### View mixes by tag   
-![tagged mixes only](public/search_by_tag.png)
+![tagged mixes only](public/filter_by_tag_gif.gif)
