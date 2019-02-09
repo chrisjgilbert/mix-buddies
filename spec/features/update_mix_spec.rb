@@ -10,11 +10,11 @@ RSpec.feature "user visits homepage", type: :feature do
     fill_in 'mix_tag_list', with: 'hip-hop, disco'
     click_button 'submit'
     expect(page).not_to have_content "my mix"
-    expect(page).not_to have_selector(:css, 'a[href="https://www.blah.com"]')
+    expect(page).not_to have_selector(:css, 'a[href="http://www.blah.com"]')
     expect(page).not_to have_link "techno"
     expect(page).not_to have_link "house"
     expect(page).to have_content "updated mix"
-    expect(page).to have_selector(:css, 'a[href="https://www.updatedmix.com"]')
+    expect(page).to have_selector(:css, 'a[href="http://www.updatedmix.com"]')
     expect(page).to have_link "hip-hop"
     expect(page).to have_link "disco"
   end

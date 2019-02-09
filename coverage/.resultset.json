@@ -407,7 +407,7 @@
         1,
         null,
         1,
-        1,
+        null,
         null
       ],
       "/Users/chris/CodeProjects/Personal/music-mix-manager/app/models/mix.rb": [
@@ -415,6 +415,13 @@
         1,
         1,
         1,
+        null,
+        1,
+        null,
+        1,
+        7,
+        null,
+        null,
         null
       ],
       "/Users/chris/CodeProjects/Personal/music-mix-manager/app/models/application_record.rb": [
@@ -430,6 +437,6 @@
         null
       ]
     },
-    "timestamp": 1549706831
+    "timestamp": 1549710020
   }
 }

@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2019-02-09T10:07:11+00:00">2019-02-09T10:07:11+00:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2019-02-09T11:00:20+00:00">2019-02-09T11:00:20+00:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,15 +25,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.49
+         1.52
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>28</b> files in total.
-    <b>163</b> relevant lines. 
-    <span class="green"><b>163</b> lines covered</span> and
+    <b>165</b> relevant lines. 
+    <span class="green"><b>165</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -103,11 +103,11 @@
       <tr>
         <td class="strong"><a href="#33e31eb889838a615ecfd504dad9f47eef31d6e8" class="src_link" title="app/models/mix.rb">app/models/mix.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>5</td>
-        <td>4</td>
-        <td>4</td>
+        <td>12</td>
+        <td>7</td>
+        <td>7</td>
         <td>0</td>
-        <td>1.0</td>
+        <td>1.9</td>
       </tr>
       
       <tr>
@@ -304,8 +304,8 @@
         <td class="strong"><a href="#55ae17f1fb166b7529177cf8a23b05a865a05e62" class="src_link" title="spec/models/mix_spec.rb">spec/models/mix_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>5</td>
-        <td>3</td>
-        <td>3</td>
+        <td>2</td>
+        <td>2</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -782,8 +782,8 @@
     <h3>app/models/mix.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>4</b> relevant lines. 
-      <span class="green"><b>4</b> lines covered</span> and
+      <b>7</b> relevant lines. 
+      <span class="green"><b>7</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -812,10 +812,52 @@
         <li class="covered" data-hits="1" data-linenumber="4">
           <span class="hits">1</span>
           
-          <code class="ruby">  acts_as_taggable_on :tags</code>
+          <code class="ruby">  before_save :format_website</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">private</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def format_website</code>
+        </li>
+      
+        <li class="covered" data-hits="7" data-linenumber="9">
+          <span class="hits">7</span>
+          
+          <code class="ruby">    self.url = &quot;http://#{self.url}&quot; unless self.url[/^https?/]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
           
           
           <code class="ruby">end</code>
@@ -2273,7 +2315,7 @@
         <li class="covered" data-hits="1" data-linenumber="6">
           <span class="hits">1</span>
           
-          <code class="ruby">    visit_homepage_and_add_mix_with_techno_house_tags </code>
+          <code class="ruby">    visit_homepage_and_add_mix_with_techno_house_tags</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="7">
@@ -2285,7 +2327,7 @@
         <li class="covered" data-hits="1" data-linenumber="8">
           <span class="hits">1</span>
           
-          <code class="ruby">    expect(page).to have_selector(:css, &#39;a[href=&quot;https://www.blah.com&quot;]&#39;)</code>
+          <code class="ruby">    expect(page).to have_selector(:css, &#39;a[href=&quot;http://www.blah.com&quot;][target=&quot;_blank&quot;]&#39;)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="9">
@@ -2364,7 +2406,7 @@
         <li class="covered" data-hits="1" data-linenumber="6">
           <span class="hits">1</span>
           
-          <code class="ruby">    visit_homepage_and_add_mix_with_techno_house_tags  </code>
+          <code class="ruby">    visit_homepage_and_add_mix_with_techno_house_tags</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="7">
@@ -2376,7 +2418,7 @@
         <li class="covered" data-hits="1" data-linenumber="8">
           <span class="hits">1</span>
           
-          <code class="ruby">    expect(page).to have_selector(:css, &#39;a[href=&quot;https://www.blah.com&quot;]&#39;)</code>
+          <code class="ruby">    expect(page).to have_selector(:css, &#39;a[href=&quot;http://www.blah.com&quot;][target=&quot;_blank&quot;]&#39;)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="9">
@@ -2394,7 +2436,7 @@
         <li class="covered" data-hits="1" data-linenumber="11">
           <span class="hits">1</span>
           
-          <code class="ruby">    expect(page).not_to have_selector(:css, &#39;a[href=&quot;https://www.blah.com&quot;]&#39;)</code>
+          <code class="ruby">    expect(page).not_to have_selector(:css, &#39;a[href=&quot;http://www.blah.com&quot;][target=&quot;_blank&quot;]&#39;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="12">
@@ -2473,7 +2515,7 @@
         <li class="covered" data-hits="1" data-linenumber="8">
           <span class="hits">1</span>
           
-          <code class="ruby">    expect(page).to have_selector(:css, &#39;a[href=&quot;https://www.blah.com&quot;]&#39;)</code>
+          <code class="ruby">    expect(page).to have_selector(:css, &#39;a[href=&quot;http://www.blah.com&quot;][target=&quot;_blank&quot;]&#39;)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="9">
@@ -2527,7 +2569,7 @@
         <li class="covered" data-hits="1" data-linenumber="17">
           <span class="hits">1</span>
           
-          <code class="ruby">    expect(page).to have_selector(:css, &#39;a[href=&quot;https://www.blah.com&quot;]&#39;)</code>
+          <code class="ruby">    expect(page).to have_selector(:css, &#39;a[href=&quot;http://www.blah.com&quot;][target=&quot;_blank&quot;]&#39;)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="18">
@@ -2551,7 +2593,7 @@
         <li class="covered" data-hits="1" data-linenumber="21">
           <span class="hits">1</span>
           
-          <code class="ruby">    expect(page).not_to have_selector(:css, &#39;a[href=&quot;https://www.disco.com&quot;]&#39;)</code>
+          <code class="ruby">    expect(page).not_to have_selector(:css, &#39;a[href=&quot;http://www.disco.com&quot;][target=&quot;_blank&quot;]&#39;)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="22">
@@ -2593,13 +2635,13 @@
         <li class="covered" data-hits="1" data-linenumber="28">
           <span class="hits">1</span>
           
-          <code class="ruby">    expect(page).to have_selector(:css, &#39;a[href=&quot;https://www.disco.com&quot;]&#39;)</code>
+          <code class="ruby">    expect(page).to have_selector(:css, &#39;a[href=&quot;http://www.disco.com&quot;][target=&quot;_blank&quot;]&#39;)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="29">
           <span class="hits">1</span>
           
-          <code class="ruby">    expect(page).to have_selector(:css, &#39;a[href=&quot;https://www.blah.com&quot;]&#39;)</code>
+          <code class="ruby">    expect(page).to have_selector(:css, &#39;a[href=&quot;http://www.blah.com&quot;][target=&quot;_blank&quot;]&#39;)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="30">
@@ -2714,7 +2756,7 @@
         <li class="covered" data-hits="1" data-linenumber="13">
           <span class="hits">1</span>
           
-          <code class="ruby">    expect(page).not_to have_selector(:css, &#39;a[href=&quot;https://www.blah.com&quot;]&#39;)</code>
+          <code class="ruby">    expect(page).not_to have_selector(:css, &#39;a[href=&quot;http://www.blah.com&quot;]&#39;)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="14">
@@ -2738,7 +2780,7 @@
         <li class="covered" data-hits="1" data-linenumber="17">
           <span class="hits">1</span>
           
-          <code class="ruby">    expect(page).to have_selector(:css, &#39;a[href=&quot;https://www.updatedmix.com&quot;]&#39;)</code>
+          <code class="ruby">    expect(page).to have_selector(:css, &#39;a[href=&quot;http://www.updatedmix.com&quot;]&#39;)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="18">
@@ -2884,8 +2926,8 @@
     <h3>spec/models/mix_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>3</b> relevant lines. 
-      <span class="green"><b>3</b> lines covered</span> and
+      <b>2</b> relevant lines. 
+      <span class="green"><b>2</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -2911,10 +2953,10 @@
           <code class="ruby">RSpec.describe Mix, type: :model do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="4">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="4">
           
-          <code class="ruby">  pending &quot;add some examples to (or delete) #{__FILE__}&quot;</code>
+          
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="5">

@@ -5,7 +5,7 @@
   <ul>
     <% @mixes.each do |mix| %>
       <li>
-        <%= link_to mix.name, "https://#{mix.url}" %>
+        <%= link_to mix.name, mix.url, target: "_blank" %>
         <% mix.tag_list.each do |tag| %>
           <%= link_to tag, mixes_path(tag: tag), :class => "btn btn-info" %>
         <% end %>
