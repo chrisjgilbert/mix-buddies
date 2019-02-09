@@ -25,7 +25,7 @@ class MixesController < ApplicationController
 
   def update
     @mix = Mix.find(params[:id])
-    @mix.update(mix_params)
+    @mix.update_attributes(mix_params)
 
     redirect_to "/"
   end
