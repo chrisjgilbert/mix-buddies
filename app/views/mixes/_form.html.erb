@@ -4,7 +4,7 @@
       <%= bootstrap_form_for(@mix) do |f| %>
         <%= f.text_field :name %>
         <%= f.text_field :url %>
-        <%= f.text_field :tag_list %>
+        <%= f.text_field :tag_list, value: @mix.tag_list.join(", ") %>
         <%= f.submit "submit" %>
       <% end %>
     </div>

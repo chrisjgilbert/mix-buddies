@@ -3,12 +3,16 @@
     "coverage": {
       "/Users/chris/CodeProjects/Personal/music-mix-manager/config/environment.rb": [
         null,
+        null,
+        null,
         1,
         null,
         null,
         1
       ],
       "/Users/chris/CodeProjects/Personal/music-mix-manager/config/application.rb": [
+        null,
+        null,
         1,
         null,
         1,
@@ -44,12 +48,16 @@
         null
       ],
       "/Users/chris/CodeProjects/Personal/music-mix-manager/config/boot.rb": [
+        null,
+        null,
         1,
         null,
         1,
         1
       ],
       "/Users/chris/CodeProjects/Personal/music-mix-manager/config/environments/test.rb": [
+        null,
+        null,
         1,
         null,
         null,
@@ -105,9 +113,13 @@
         null,
         null,
         null,
+        null,
+        null,
         null
       ],
       "/Users/chris/CodeProjects/Personal/music-mix-manager/config/initializers/assets.rb": [
+        null,
+        null,
         null,
         null,
         null,
@@ -124,6 +136,8 @@
         null
       ],
       "/Users/chris/CodeProjects/Personal/music-mix-manager/config/initializers/backtrace_silencers.rb": [
+        null,
+        null,
         null,
         null,
         null,
@@ -157,6 +171,8 @@
         null,
         null,
         null,
+        null,
+        null,
         null
       ],
       "/Users/chris/CodeProjects/Personal/music-mix-manager/config/initializers/cookies_serializer.rb": [
@@ -164,9 +180,13 @@
         null,
         null,
         null,
+        null,
+        null,
         1
       ],
       "/Users/chris/CodeProjects/Personal/music-mix-manager/config/initializers/filter_parameter_logging.rb": [
+        null,
+        null,
         null,
         null,
         null,
@@ -188,15 +208,21 @@
         null,
         null,
         null,
+        null,
+        null,
         null
       ],
       "/Users/chris/CodeProjects/Personal/music-mix-manager/config/initializers/mime_types.rb": [
         null,
         null,
         null,
+        null,
+        null,
         null
       ],
       "/Users/chris/CodeProjects/Personal/music-mix-manager/config/initializers/wrap_parameters.rb": [
+        null,
+        null,
         null,
         null,
         null,
@@ -213,20 +239,28 @@
         null
       ],
       "/Users/chris/CodeProjects/Personal/music-mix-manager/config/routes.rb": [
+        null,
+        null,
         1,
         1,
         1,
         null
       ],
       "/Users/chris/CodeProjects/Personal/music-mix-manager/app/helpers/application_helper.rb": [
+        null,
+        null,
         1,
         null
       ],
       "/Users/chris/CodeProjects/Personal/music-mix-manager/app/helpers/mixes_helper.rb": [
+        null,
+        null,
         1,
         null
       ],
       "/Users/chris/CodeProjects/Personal/music-mix-manager/spec/support/feature_helpers.rb": [
+        null,
+        null,
         1,
         1,
         5,
@@ -248,15 +282,16 @@
         null
       ],
       "/Users/chris/CodeProjects/Personal/music-mix-manager/app/controllers/mixes_controller.rb": [
+        null,
+        null,
+        1,
         1,
         null,
         1,
-        null,
-        1,
-        18,
+        17,
         2,
         null,
-        16,
+        15,
         null,
         null,
         null,
@@ -277,7 +312,6 @@
         null,
         null,
         1,
-        null,
         null,
         1,
         1,
@@ -297,10 +331,14 @@
         null
       ],
       "/Users/chris/CodeProjects/Personal/music-mix-manager/app/controllers/application_controller.rb": [
+        null,
+        null,
         1,
         null
       ],
       "/Users/chris/CodeProjects/Personal/music-mix-manager/spec/features/add_mix_spec.rb": [
+        null,
+        null,
         1,
         1,
         null,
@@ -315,6 +353,8 @@
         null
       ],
       "/Users/chris/CodeProjects/Personal/music-mix-manager/spec/features/delete_mix_spec.rb": [
+        null,
+        null,
         1,
         1,
         null,
@@ -330,6 +370,8 @@
         null
       ],
       "/Users/chris/CodeProjects/Personal/music-mix-manager/spec/features/search_by_tag_spec.rb": [
+        null,
+        null,
         1,
         1,
         null,
@@ -364,6 +406,8 @@
         null
       ],
       "/Users/chris/CodeProjects/Personal/music-mix-manager/spec/features/update_mix_spec.rb": [
+        null,
+        null,
         1,
         1,
         null,
@@ -387,6 +431,8 @@
         null
       ],
       "/Users/chris/CodeProjects/Personal/music-mix-manager/spec/helpers/mixes_helper_spec.rb": [
+        null,
+        null,
         1,
         null,
         null,
@@ -404,13 +450,16 @@
         null
       ],
       "/Users/chris/CodeProjects/Personal/music-mix-manager/spec/models/mix_spec.rb": [
-        1,
+        null,
         null,
         1,
         null,
+        1,
         null
       ],
       "/Users/chris/CodeProjects/Personal/music-mix-manager/app/models/mix.rb": [
+        null,
+        null,
         1,
         1,
         1,
@@ -421,15 +470,18 @@
         1,
         7,
         null,
-        null,
         null
       ],
       "/Users/chris/CodeProjects/Personal/music-mix-manager/app/models/application_record.rb": [
+        null,
+        null,
         1,
         1,
         null
       ],
       "/Users/chris/CodeProjects/Personal/music-mix-manager/spec/views/mixes/index.html.erb_spec.rb": [
+        null,
+        null,
         1,
         null,
         1,
@@ -437,6 +489,6 @@
         null
       ]
     },
-    "timestamp": 1549712675
+    "timestamp": 1549716080
   }
 }
