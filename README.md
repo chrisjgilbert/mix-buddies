@@ -25,4 +25,4 @@ I approached this app in more of a BDD way - that is writing only integration te
 ![add mix](public/add_mix_gif.gif)
 
 ### View mixes by tag   
-![tagged mixes only](public/filter_by_tag_gif.gif)
+![tagged mixes only](public/filter_by_tag.gif)
