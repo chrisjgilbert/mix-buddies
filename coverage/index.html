@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2019-02-09T12:48:26+00:00">2019-02-09T12:48:26+00:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2019-02-09T12:56:06+00:00">2019-02-09T12:56:06+00:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -442,31 +442,31 @@
         <li class="covered" data-hits="17" data-linenumber="7">
           <span class="hits">17</span>
           
-          <code class="ruby">    @mixes = if params[:tag]</code>
+          <code class="ruby">    if params[:tag]</code>
         </li>
       
         <li class="covered" data-hits="2" data-linenumber="8">
           <span class="hits">2</span>
           
-          <code class="ruby">       Mix.tagged_with(params[:tag])</code>
+          <code class="ruby">      @mixes = Mix.tagged_with(params[:tag])</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="9">
           
           
-          <code class="ruby">     else</code>
+          <code class="ruby">    else</code>
         </li>
       
         <li class="covered" data-hits="15" data-linenumber="10">
           <span class="hits">15</span>
           
-          <code class="ruby">       Mix.all</code>
+          <code class="ruby">      @mixes = Mix.all</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="11">
           
           
-          <code class="ruby">     end</code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="12">
