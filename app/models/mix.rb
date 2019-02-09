@@ -3,7 +3,7 @@ class Mix < ApplicationRecord
   acts_as_taggable
   before_save :format_website
 
-private
+  private
 
   def format_website
     self.url = "http://#{self.url}" unless self.url[/^https?/]
