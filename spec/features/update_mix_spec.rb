@@ -3,7 +3,7 @@ include FeatureHelpers
 
 RSpec.feature "user visits homepage", type: :feature do
   scenario "user updates mix" do
-    visit_homepage_and_add_mix_with_tags
+    visit_homepage_and_add_mix_with_techno_house_tags
     click_link 'update'
     fill_in 'mix_name', with: 'updated mix'
     fill_in 'mix_url', with: 'www.updatedmix.com'

@@ -1,6 +1,7 @@
 <div class="container">
   <div class="row">
   <%= link_to "add mix", new_mix_path(@mix) %>
+  <%= link_to "view all mixes", mixes_path %>
   <ul>
     <% @mixes.each do |mix| %>
       <li>
