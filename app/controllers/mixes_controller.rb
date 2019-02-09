@@ -1,4 +1,7 @@
 class MixesController < ApplicationController
+
+  before_action :find_mix, only: [:edit, :update, :destroy]
+
   def index
     @mixes = Mix.all
   end
@@ -14,17 +17,15 @@ class MixesController < ApplicationController
   end
 
   def destroy
-    Mix.destroy(params[:id])
+    @mix.destroy
 
     redirect_to "/"
   end
 
   def edit
-    @mix = Mix.find(params[:id])
   end
 
   def update
-    @mix = Mix.find(params[:id])
     @mix.update_attributes(mix_params)
 
     redirect_to "/"
@@ -34,5 +35,9 @@ class MixesController < ApplicationController
 
   def mix_params
     params.require(:mix).permit(:name, :url, :tag_list)
+  end
+
+  def find_mix
+    @mix = Mix.find(params[:id])
   end
 end

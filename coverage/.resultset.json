@@ -240,6 +240,9 @@
       ],
       "/Users/chris/CodeProjects/Personal/music-mix-manager/app/controllers/mixes_controller.rb": [
         1,
+        null,
+        1,
+        null,
         1,
         9,
         null,
@@ -261,10 +264,8 @@
         null,
         null,
         1,
-        1,
         null,
         null,
-        1,
         1,
         1,
         null,
@@ -275,6 +276,10 @@
         null,
         1,
         4,
+        null,
+        null,
+        1,
+        3,
         null,
         null
       ],
@@ -378,6 +383,6 @@
         null
       ]
     },
-    "timestamp": 1549701237
+    "timestamp": 1549701384
   }
 }
