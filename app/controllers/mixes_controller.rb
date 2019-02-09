@@ -23,6 +23,12 @@ class MixesController < ApplicationController
   def destroy
     @mix.destroy
 
+    respond_to do |format|
+     format.html { redirect_to mixes_url }
+     format.json { head :no_content }
+     format.js   { render :layout => false }
+    end
+
     redirect_to "/"
   end
 
