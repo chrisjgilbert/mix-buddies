@@ -17,8 +17,11 @@ class MixesController < ApplicationController
 
   def create
     @mix = Mix.create(mix_params)
-
-    redirect_to '/'
+      if @mix.save
+        redirect_to '/'
+      else
+        render 'new'
+      end
   end
 
   def destroy
