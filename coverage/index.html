@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2019-02-15T18:02:53+00:00">2019-02-15T18:02:53+00:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2019-02-15T18:06:19+00:00">2019-02-15T18:06:19+00:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,15 +25,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.76
+         1.74
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>29</b> files in total.
-    <b>178</b> relevant lines. 
-    <span class="green"><b>178</b> lines covered</span> and
+    <b>185</b> relevant lines. 
+    <span class="green"><b>185</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -107,7 +107,7 @@
         <td>7</td>
         <td>7</td>
         <td>0</td>
-        <td>4.1</td>
+        <td>4.3</td>
       </tr>
       
       <tr>
@@ -303,9 +303,9 @@
       <tr>
         <td class="strong"><a href="#5b88568f968cbbcc0c9a85995dfdd49f152454b9" class="src_link" title="spec/models/mix_spec.rb">spec/models/mix_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>6</td>
-        <td>2</td>
-        <td>2</td>
+        <td>17</td>
+        <td>9</td>
+        <td>9</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -894,7 +894,7 @@
         <li class="covered" data-hits="1" data-linenumber="4">
           <span class="hits">1</span>
           
-          <code class="ruby">  validates_presence_of :name, :url</code>
+          <code class="ruby">  validates_presence_of :name, :url, :tag_list</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="5">
@@ -933,8 +933,8 @@
           <code class="ruby">  def format_website</code>
         </li>
       
-        <li class="covered" data-hits="23" data-linenumber="11">
-          <span class="hits">23</span>
+        <li class="covered" data-hits="24" data-linenumber="11">
+          <span class="hits">24</span>
           
           <code class="ruby">    self.url = &quot;http://#{url}&quot; unless url[/^https?/]</code>
         </li>
@@ -4934,8 +4934,8 @@
     <h3>spec/models/mix_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>2</b> relevant lines. 
-      <span class="green"><b>2</b> lines covered</span> and
+      <b>9</b> relevant lines. 
+      <span class="green"><b>9</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -4973,7 +4973,73 @@
           <code class="ruby">RSpec.describe Mix, type: :model do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="6">
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  describe &#39;creation validation&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &#39;will create with valid attributes&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      mix = Mix.create(name: &#39;techno mix&#39;, url: &#39;www.google.com&#39;, tag_list: &#39;techno&#39;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(mix).to be_valid</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &#39;will not create without valid attributes&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="13">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      mix = Mix.create(name: &#39;&#39;, url: &#39;&#39;, tag_list: &#39;&#39;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(mix).not_to be_valid</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
           
           
           <code class="ruby">end</code>

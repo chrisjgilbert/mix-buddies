@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class Mix < ApplicationRecord
-  validates_presence_of :name, :url
+  validates_presence_of :name, :url, :tag_list
   acts_as_taggable
   before_save :format_website
 

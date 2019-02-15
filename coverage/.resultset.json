@@ -750,6 +750,17 @@
         1,
         null,
         1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
         null
       ],
       "/Users/chris/CodeProjects/Makers/music-mix-manager/app/models/mix.rb": [
@@ -763,7 +774,7 @@
         1,
         null,
         1,
-        23,
+        24,
         null,
         null
       ],
@@ -778,6 +789,6 @@
 
       ]
     },
-    "timestamp": 1550253773
+    "timestamp": 1550253979
   }
 }
