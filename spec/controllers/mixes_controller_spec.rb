@@ -15,7 +15,7 @@ RSpec.describe MixesController, type: :controller do
       @techno_mix = Mix.create(name: 'techno mix', url: 'techno.com', tag_list: 'techno')
       end
       it 'returns 200' do
-        get :index, params: { tag: 'techno' }
+        get :index, params: { tag: @techno_mix.tag_list }
         expect(response).to have_http_status(200)
       end
     end
