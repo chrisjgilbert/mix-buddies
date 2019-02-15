@@ -4,6 +4,11 @@ require 'rails_helper'
 
 RSpec.describe MixesController, type: :controller do
 
+  before do
+    user = User.create(first_name: "Jon", last_name: "Snow", email: "test@test.com", password: "secret", password_confirmation: "secret")
+    login_as(user, :scope => :user)
+  end
+
   describe 'GET index' do
     it 'returns a 200' do
       get :index
