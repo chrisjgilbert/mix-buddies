@@ -559,6 +559,15 @@
         1,
         null
       ],
+      "/Users/chris/CodeProjects/Makers/music-mix-manager/spec/support/mixes_controller_helpers.rb": [
+        1,
+        2,
+        null,
+        null,
+        1,
+        1,
+        null
+      ],
       "/Users/chris/CodeProjects/Makers/music-mix-manager/spec/support/feature_helpers.rb": [
         null,
         null,
@@ -601,36 +610,37 @@
         null,
         null,
         1,
-        8,
-        8,
-        7,
-        null,
-        1,
-        null,
-        null,
-        null,
-        1,
-        3,
-        null,
-        3,
-        null,
-        null,
-        1,
-        null,
-        1,
-        1,
-        null,
-        1,
-        null,
-        null,
-        1,
-        null,
-        1,
         9,
+        9,
+        8,
+        null,
+        1,
+        null,
         null,
         null,
         1,
-        5,
+        3,
+        null,
+        3,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        2,
+        null,
+        2,
+        null,
+        null,
+        1,
+        null,
+        1,
+        11,
+        null,
+        null,
+        1,
+        7,
         null,
         null
       ],
@@ -734,9 +744,6 @@
         null,
         null
       ],
-      "/Users/chris/CodeProjects/Makers/music-mix-manager/spec/helpers/mixes_helper_spec.rb": [
-
-      ],
       "/Users/chris/CodeProjects/Makers/music-mix-manager/spec/models/mix_spec.rb": [
         null,
         null,
@@ -756,7 +763,7 @@
         1,
         null,
         1,
-        17,
+        22,
         null,
         null
       ],
@@ -771,6 +778,6 @@
 
       ]
     },
-    "timestamp": 1550248537
+    "timestamp": 1550252925
   }
 }
