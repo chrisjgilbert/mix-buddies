@@ -9,6 +9,22 @@ RSpec.describe MixesController, type: :controller do
       get :index
       expect(response).to have_http_status(200)
     end
+
+    context 'with `tag` params' do
+      before do
+      @techno_mix = Mix.create(name: 'techno mix', url: 'techno.com', tag_list: 'techno')
+      end
+      it 'returns 200' do
+        get :index, params: { tag: 'techno' }
+        expect(response).to have_http_status(200)
+      end
+    end
+    context 'without `tag` params' do
+      it 'returns a 200' do
+        get :index
+        expect(response).to have_http_status(200)
+      end
+    end
   end
 
   describe 'GET new' do
