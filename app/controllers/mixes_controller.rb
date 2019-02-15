@@ -17,6 +17,7 @@ class MixesController < ApplicationController
 
   def create
     @mix = Mix.create(mix_params)
+    @mix.user_id = current_user.id
       if @mix.save
         redirect_to mixes_path
       else

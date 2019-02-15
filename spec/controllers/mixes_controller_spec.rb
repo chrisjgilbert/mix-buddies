@@ -5,8 +5,8 @@ require 'rails_helper'
 RSpec.describe MixesController, type: :controller do
 
   before do
-    user = User.create(first_name: "Jon", last_name: "Snow", email: "test@test.com", password: "secret", password_confirmation: "secret")
-    login_as(user, :scope => :user)
+    @user = User.create(first_name: "Jon", last_name: "Snow", email: "test@test.com", password: "secret", password_confirmation: "secret")
+    sign_in(@user, :scope => :user)
   end
 
   describe 'GET index' do
@@ -17,7 +17,7 @@ RSpec.describe MixesController, type: :controller do
 
     context 'with `tag` params' do
       before do
-      @techno_mix = Mix.create(name: 'techno mix', url: 'techno.com', tag_list: 'techno')
+      @techno_mix = Mix.create(name: 'techno mix', url: 'techno.com', tag_list: 'techno', user_id: @user.id)
       end
       it 'returns 200' do
         get :index, params: { tag: @techno_mix.tag_list }
@@ -58,7 +58,7 @@ RSpec.describe MixesController, type: :controller do
 
   context 'with a mix in the db' do
     before do
-      @mix = Mix.create(name: 'test', url: 'blah.com', tag_list: 'techno')
+      @mix = Mix.create(name: 'test', url: 'blah.com', tag_list: 'techno', user_id: @user.id)
     end
     describe 'DELETE destroy' do
       it 'redirects to mixes path' do

@@ -2,6 +2,7 @@
 
 class Mix < ApplicationRecord
   validates_presence_of :name, :url, :tag_list
+  belongs_to :user, dependent: :destroy
   acts_as_taggable
   before_save :format_website
 
