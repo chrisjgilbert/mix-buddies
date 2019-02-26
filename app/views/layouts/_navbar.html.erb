@@ -12,6 +12,9 @@
           <% end %>
           <%= link_to "add mix", new_mix_path(@mix), class: 'nav-item nav-link' %>
           <%= link_to "view all mixes", mixes_path, class: 'nav-item nav-link' %>
+          <% if current_user %>
+            <%= link_to "Sign Out", destroy_user_session_path, :method => :delete, class: 'nav-item nav-link' %>
+          <% end %>
         </div>
       </div>
     </div>

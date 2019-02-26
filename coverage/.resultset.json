@@ -639,28 +639,6 @@
         null,
         null
       ],
-      "/Users/chris/CodeProjects/Makers/music-mix-manager/app/controllers/registrations_controller.rb": [
-        1,
-        1,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        null,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/chris/CodeProjects/Makers/music-mix-manager/app/controllers/application_controller.rb": [
-        null,
-        null,
-        1,
-        1,
-        null
-      ],
       "/Users/chris/CodeProjects/Makers/music-mix-manager/app/controllers/mixes_controller.rb": [
         null,
         null,
@@ -715,6 +693,13 @@
         null,
         null
       ],
+      "/Users/chris/CodeProjects/Makers/music-mix-manager/app/controllers/application_controller.rb": [
+        null,
+        null,
+        1,
+        1,
+        null
+      ],
       "/Users/chris/CodeProjects/Makers/music-mix-manager/app/models/mix.rb": [
         null,
         null,
@@ -732,6 +717,6 @@
         null
       ]
     },
-    "timestamp": 1551181209
+    "timestamp": 1551182771
   }
 }

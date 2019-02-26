@@ -5,7 +5,7 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <script src='./assets/0.10.2/application.js' type='text/javascript'></script>    
     <link href='./assets/0.10.2/application.css' media='screen, projection, print' rel='stylesheet' type='text/css'>
-    <link rel="shortcut icon" type="image/png" href="./assets/0.10.2/favicon_yellow.png" />
+    <link rel="shortcut icon" type="image/png" href="./assets/0.10.2/favicon_red.png" />
     <link rel="icon" type="image/png" href="./assets/0.10.2/favicon.png" />
   </head>
   
@@ -14,26 +14,26 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2019-02-26T11:40:09+00:00">2019-02-26T11:40:09+00:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2019-02-26T12:06:11+00:00">2019-02-26T12:06:11+00:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="yellow">80.56%</span></span>
+    (<span class="covered_percent"><span class="red">79.56%</span></span>
      covered at
      <span class="covered_strength">
        <span class="red">
-         0.85
+         0.84
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>27</b> files in total.
-    <b>144</b> relevant lines. 
-    <span class="green"><b>116</b> lines covered</span> and
+    <b>26</b> files in total.
+    <b>137</b> relevant lines. 
+    <span class="green"><b>109</b> lines covered</span> and
     <span class="red"><b>28</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -68,16 +68,6 @@
         <td>13</td>
         <td>13</td>
         <td>0.5</td>
-      </tr>
-      
-      <tr>
-        <td class="strong"><a href="#213aed3a94807c755a8382a7357e63cebbc68423" class="src_link" title="app/controllers/registrations_controller.rb">app/controllers/registrations_controller.rb</a></td>
-        <td class="green strong">100.0 %</td>
-        <td>13</td>
-        <td>7</td>
-        <td>7</td>
-        <td>0</td>
-        <td>1.0</td>
       </tr>
       
       <tr>
@@ -706,103 +696,6 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="52">
-          
-          
-          <code class="ruby">end</code>
-        </li>
-      
-    </ol>
-  </pre>
-</div>
-
-      
-        <div class="source_table" id="213aed3a94807c755a8382a7357e63cebbc68423">
-  <div class="header">
-    <h3>app/controllers/registrations_controller.rb</h3>
-    <h4><span class="green">100.0 %</span> covered</h4>
-    <div>
-      <b>7</b> relevant lines. 
-      <span class="green"><b>7</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
-    </div>
-  </div>
-  
-  <pre>
-    <ol>
-      
-        <li class="covered" data-hits="1" data-linenumber="1">
-          <span class="hits">1</span>
-          
-          <code class="ruby">class RegistrationsController &lt; Devise::RegistrationsController</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="2">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  private</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="3">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="4">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def sign_up_params</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="5">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    params.require(:user).permit(:first_name, :last_name, :email, :password, :password_confirmation)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="6">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="7">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="8">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  protected</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="9">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="10">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def after_sign_up_path_for(resource)</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="11">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    &#39;/mixes&#39;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="12">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="13">
           
           
           <code class="ruby">end</code>
