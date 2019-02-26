@@ -9,7 +9,7 @@ RSpec.feature 'user sign out', type: :feature do
     click_on 'Sign Out'
     expect(page).not_to have_content 'Sign Out'
     expect(page).not_to have_content "Hello, #{user.first_name}"
-    expect(current_path).to eq '/'
+    expect(current_path).to eq '/users/sign_in'
     expect(page).to have_content 'Sign In'
   end
 end

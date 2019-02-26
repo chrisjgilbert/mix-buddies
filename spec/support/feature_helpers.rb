@@ -2,6 +2,8 @@
 
 module FeatureHelpers
   def visit_homepage_and_add_mix_with_techno_house_tags
+    user = FactoryBot.create(:user)
+    login_as(user, :scope => :user)
     visit '/'
     click_link 'add mix'
     fill_in 'mix_name', with: 'my mix'
@@ -11,6 +13,8 @@ module FeatureHelpers
   end
 
   def visit_homepage_and_add_mix_with_disco_tag
+    user = FactoryBot.create(:user)
+    login_as(user, :scope => :user)
     visit '/'
     click_link 'add mix'
     fill_in 'mix_name', with: 'disco mix'
