@@ -11,7 +11,7 @@
 
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container ">
+      <div class="container">
         <div class="row">
           <%= link_to "Mix Manager", mixes_path, class: 'navbar-brand' %>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,6 +19,9 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
+              <% if current_user %>
+              <p class="navbar-brand">Hello, <%=current_user.first_name%></p>
+              <% end %>
               <%= link_to "add mix", new_mix_path(@mix), class: 'nav-item nav-link' %>
               <%= link_to "view all mixes", mixes_path, class: 'nav-item nav-link' %>
             </div>
