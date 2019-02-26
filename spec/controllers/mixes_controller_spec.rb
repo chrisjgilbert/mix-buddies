@@ -17,7 +17,7 @@ RSpec.describe MixesController, type: :controller do
 
     context 'with `tag` params' do
       before do
-      @techno_mix = Mix.create(name: 'techno mix', url: 'techno.com', tag_list: 'techno', user_id: @user.id)
+        @techno_mix = FactoryBot.build(:mix)
       end
       it 'returns 200' do
         get :index, params: { tag: @techno_mix.tag_list }
@@ -45,7 +45,7 @@ RSpec.describe MixesController, type: :controller do
         expect(create_valid_mix_action).to redirect_to mixes_path
       end
 
-      xit 'creates a mix in the db' do
+      it 'creates a mix in the db' do
         expect { create_valid_mix_action }.to change { Mix.count }.by(1)
       end
     end
@@ -58,14 +58,14 @@ RSpec.describe MixesController, type: :controller do
 
   context 'with a mix in the db' do
     before do
-      @mix = Mix.create(name: 'test', url: 'blah.com', tag_list: 'techno', user_id: @user.id)
+      @mix = FactoryBot.create(:mix)
     end
     describe 'DELETE destroy' do
       it 'redirects to mixes path' do
         delete :destroy, params: { id: @mix.id }
         expect(response).to redirect_to mixes_path
       end
-      xit 'deletes mix from db' do
+      it 'deletes mix from db' do
         expect { delete :destroy, params: { id: @mix.id } }.to change { Mix.count }.by(-1)
       end
     end
