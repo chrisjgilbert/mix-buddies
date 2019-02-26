@@ -8,10 +8,9 @@ FactoryBot.define do
   end
 
   factory :mix do
+    user
     name { Faker::Music.album }
     url { Faker::Internet.url }
     tag_list { Faker::Music.genre }
-
-    association :user
   end
 end
