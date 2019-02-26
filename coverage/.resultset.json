@@ -578,6 +578,7 @@
         null,
         1,
         null,
+        1,
         null
       ],
       "/Users/chris/CodeProjects/Makers/music-mix-manager/app/models/application_record.rb": [
@@ -651,10 +652,10 @@
         1,
         null,
         1,
-        21,
+        22,
         3,
         null,
-        18,
+        19,
         null,
         null,
         null,
@@ -891,6 +892,10 @@
         1,
         null,
         null,
+        1,
+        1,
+        null,
+        null,
         null
       ],
       "/Users/chris/CodeProjects/Makers/music-mix-manager/spec/views/mixes/index.html.erb_spec.rb": [
@@ -912,6 +917,6 @@
         null
       ]
     },
-    "timestamp": 1551183648
+    "timestamp": 1551191908
   }
 }

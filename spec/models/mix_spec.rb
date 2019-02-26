@@ -18,7 +18,7 @@ RSpec.describe Mix, type: :model do
 
   describe 'associations' do
     it 'belongs to a user' do
-      should belong_to(:user).dependent(:destroy)
+      should belong_to(:user)
     end
   end
 end

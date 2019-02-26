@@ -11,5 +11,9 @@ RSpec.describe User, type: :model do
       user = User.create(first_name: nil, last_name: nil, email: nil, password: nil, password_confirmation: nil)
       expect(user).not_to be_valid
     end
+
+    it 'has many mixes ' do
+      should have_many(:mixes).dependent(:destroy)
+    end
   end
 end
